@@ -35,7 +35,7 @@ clear
 		 echo "Montando $NUM:  $IP"
 		 echo ""
 		 RESULTADO
-		 RESULTADO >> ListaProxys.txt
+		 RESULTADO >> conecta4g.txt
                  echo ""
                  echo ""
               NUM=$(($NUM+1))

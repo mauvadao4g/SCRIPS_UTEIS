@@ -2,23 +2,37 @@
 clear
 COMANDOS(){
   
-  echo "                       Use um comando"
-    echo ""
+  echo "                      COMANDOS                              "
+    echo "                     @mauvadao                                 "
+           echo "----------------------------------------------------------------------------------"  
         echo "                    SERVIDOR SSH              "
+      echo "----------------------------------------------------------------------------------"
   echo "./serverssh.sh -k  -->>  script do kirito"
    echo "./serverssh.sh -m  -->>  script do Mentalista"
     echo "./serverssh.sh -p  -->>  script do Proverbiox"
      echo "./serverssh.sh -s  -->>  script do Sukuna"     
       echo "./serverssh.sh -v  -->>  script do VemBrabo"
        echo "./serverssh.sh -g  -->>  script do Godyskyup"
-       echo
-    #          
+       echo  "./serverssh.sh -free -->> sshplus-manager-free" 
     #  PAINEIS   
+    echo "----------------------------------------------------------------------------------"
+     echo "----------------------------------------------------------------------------------"
             echo "                    PAINEL WEB                  "
+      echo "----------------------------------------------------------------------------------"
+          
             echo ""
-echo "./serverssh.sh -22   -->>  PainelWeb 2022"
- echo "./serverssh.sh       -->>  Painel --------"
-       
+echo "./serverssh.sh -22-->>   PainelWeb 2022"
+ echo "./serverssh.sh -sr22-->> Sincronizar  Painel (Web22) "
+            echo "----------------------------------------------------------------------------------"
+            echo "                    PAINEL NANDO                 "
+            echo "----------------------------------------------------------------------------------"
+            echo "----------------------------------------------------------------------------------"
+ echo "./serverssh.sh -n-->>    PainelWeb4g chave ( @nandoslayer )"
+  echo "./serverssh.sh -srn-->>  Sincronizar Painel (@nandoslayer)"
+   echo "./serverssh.sh -ng-->>   PainelGestor (@nandoslayer) "
+   echo "./serverssh.sh -srng-->> Sincronizar script pro crazzy (@nandoslayer)"
+   echo "./serverssh.sh -srgx-->> Sincronizar  (@nandoslayer)"
+      echo "./serverssh.sh -ng4-->>  Adicionar banco de dados conectag PainelGestor  (Nando)"
   }
 
 
@@ -102,6 +116,20 @@ read -p "pressione um botao para continuar... (ctrl+c stop)"  food
 		exit
 		
 		
+# SSHPLUS-MANAGER-FREE
+		elif  [[  $1 == -free  ]] 
+		then
+		echo  "Instalando sshplus-manager-free"
+		read -p "pressione um botao para continuar... (ctrl+c stop)"  food
+		echo  ""
+		apt-get update -y; 
+apt-get upgrade -y; 
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; 
+chmod 777 Plus; ./Plus
+
+		exit		
+		
+		
 #          PAINEIS WEB
 
 		elif  [[  $1 == -22  ]] 
@@ -118,7 +146,7 @@ read -p "pressione um botao para continuar... (ctrl+c stop)"  food
 
 
 #               SINCORNIZAR 
-			elif  [[  $1 == -22  ]] 
+			elif  [[  $1 == -sr22  ]] 
 			then
 			echo  "       Sincornizando com o Painel           "
 			echo  ""
@@ -127,9 +155,9 @@ read -p "pressione um botao para continuar... (ctrl+c stop)"  food
 
 
 	# SINCRONIZAR SCRIPT PRO
-	elif  [[  $1 == -22  ]] 
+	elif  [[  $1 == -srpro  ]] 
 	then
-	echo  "       Sincornizando com o Painel           "
+	echo  "       Sincornizando com o Painel  Web22 com script pro         "
 	read -p "pressione um botao para continuar... (ctrl+c stop)"  food
 	echo  ""
 		 apt install dos2unix -y; wget https://raw.githubusercontent.com/wellzin-blip/v2022/master/gestorssh/sincrazy && chmod +x sincrazy && dos2unix sincrazy && ./sincrazy
@@ -137,6 +165,92 @@ read -p "pressione um botao para continuar... (ctrl+c stop)"  food
 	
 	
 	
+	#          PAINEIS NANDO
+
+		elif  [[  $1 == -n  ]] 
+		then
+		echo  "       Instalando PainelWeb4gNando  ( ch:@nandoslayer ) "
+		echo  "                 SISTEMA                    "
+		echo  "Nao funciona em arm"
+		echo  "Ubuntu 18"
+		echo  ""
+		read  -p  "!!!ATENÇÃO!!! (ctlr + c stop)"  food	
+		echo  ""
+		 apt install wget -y; wget bitbucket.org/nandoslayer/4g/downloads/install.sh && chmod +x install.sh && ./install*
+
+		exit
+
+
+#          PAINEIS NANDO GESTOR SSH
+
+		elif  [[  $1 == -ng  ]] 
+		then
+		echo  "       Instalando PainelGestorNando  ( ch:@nandoslayer ) "
+		echo  "                 SISTEMA                    "
+		echo  "Nao funciona em arm"
+		echo  "Ubuntu 18"
+		echo  ""
+		read  -p  "!!!ATENÇÃO!!! (ctlr + c stop)"  food	
+		echo  ""
+		clear
+		read -p "atualizar(1)  instalar (2) banco de dados conectag(3)"  RESPOSTA
+				if  [[  $RESPOSTA == 2  ]]
+				then
+				echo "Ok vamos Instalar o Gestor"	
+					read -p "pressione um botao para continuar... (ctrl+c stop)"  food	
+				echo ""
+		#apt install wget -y; wget bitbucket.org/nandoslayer/install/downloads/installorig.sh && chmod +x installorig.sh && ./installorig*
+				exit  
+				   elif  [[  $RESPOSTA == 1  ]]
+				then
+			echo "Ok vamos Atualizar o Gestor"	
+				read -p "pressione um botao para continuar... (ctrl+c stop)"  food	
+			echo ""
+			wget bitbucket.org/nandoslayer/painel/downloads/attpweb.sh && chmod +x attpweb.sh && ./attpweb*
+				exit
+				     elif  [[  $RESPOSTA == 3  ]]
+				then
+			echo "Ok vamos Adicionar o banco de dados do conectag"	
+				read -p "pressione um botao para continuar... (ctrl+c stop)"  food	
+			echo ""
+			apt install wget -y; bash <(wget -qO- bitbucket.org/nandoslayer/old/downloads/old.sh)
+				exit
+				     else
+				exit
+				fi
+
+#                SINCRONIZAR NA VPS COM SCRIPT SSHPLUS PRO DO CRAZY!
+			elif  [[  $1 == -srng ]] 
+			then
+			echo  "  Sincornizando com o Painel  SshplusPro Crazy         "
+				read -p "pressione um botao para continuar... (ctrl+c stop)"  food
+			echo  ""
+		apt install wget -y; bash <(wget -qO- bitbucket.org/nandoslayer/old/downloads/old.sh)
+
+			exit
+
+	# SINCRONIZAR NA VPS, COMPATÍVEL COM X86_64!
+# NÃO USE ESSE SCRIPT EM VPS SSHPLUS PRO DO CRAZY, RISCO DE PERDER A LICENÇA!       
+			elif  [[  $1 == -srngx  ]] 
+			then
+			echo  "       Sincornizando com o Painel           "
+				read -p "pressione um botao para continuar... (ctrl+c stop)"  food
+			echo  ""
+		 apt install wget -y; bash <(wget -qO- bitbucket.org/nandoslayer/painel/downloads/sincoriginal.sh)
+			exit
+		
+		
+		
+		#                ADICIONAR BANCO DE DADOS DO CONECTA4G NO PAINEL
+			elif  [[  $1 == -ng4 ]] 
+			then
+			echo  "  Adicionando banco de dados do conecta4g         "
+				read -p "pressione um botao para continuar... (ctrl+c stop)"  food
+			echo  ""
+		apt install wget -y; bash <(wget -qO- bitbucket.org/nandoslayer/old/downloads/old.sh)
+			exit
+		
+		
 	
 	#  •SCRIPT  ATUALIZAR SSL CLARO
 		elif  [[  $1 == -claro  ]] 
