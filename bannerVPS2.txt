@@ -1,0 +1,14 @@
+BANNER N1:
+/etc/bannerssh
+
+
+
+
+
+
+
+
+<h1><font>============================================</font></h1>
+<h1 style="text-align:center"><font color="red">SERVIDORES VPS PREMIUM 2022</font></h1>
+<h1><font>============================================</font></h1><h4 style="text-align:center"><font color="green">ESTA CONECTADO AO SERVIDOR DO MAUDAVPN, PARA COMPRAR SERVIDORES PRIVADOS COMPATIBLE A JUEGOS, NETFLIX Y MAS RAPIDOS CONTACTARME.</h4></font><h1><font>============================================</font></h1><h3 style="text-align:center"><font color="blue">TELEGRAM: @maudavpn </h3></font><h1><font>============================================</font></h1><h3 style="text-align:center"><font color="green">SITIO WEB: https://t.me/maudavpn</h3></font><h1><font>============================================</font></h1>
+<h3 style="text-align:center"><font color="yellow">MAUDAVPN</h3></font><h1><font>============================================</font></h1>
